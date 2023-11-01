@@ -42,6 +42,7 @@ case "feeds":pag=<Feeds
   loginData={loginData}
   setPage={setPage}
 />
+  break 
   default:pag=<Page loginData={loginData} setPage={setPage}/>
 }
   return pag
