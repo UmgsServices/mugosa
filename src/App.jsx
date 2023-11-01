@@ -22,9 +22,9 @@ const [loginData,setlogin]=useState(user)
 const [page,setPage]=useState("page")
 
 let pag
+ const navigate=useNavigate()
   useEffect(()=>{
-const navigate=useNavigate()
-   navigate ("/")
+   navigate("/")
   },[])
 switch(page){
 case "login" :pag=<Login
