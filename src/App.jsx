@@ -1,4 +1,4 @@
-import { useState, } from 'react'; 
+import { useState,useEffect } from 'react'; 
 import Login from './login.jsx'
 import SignUP from './sinup.jsx';
 import Feeds from './feeds.jsx';
@@ -20,7 +20,8 @@ function App(){
 const [loginData,setlogin]=useState(user)
 const [page,setPage]=useState("page")
 
-let pag=<Page loginData={loginData} setPage={setPage}/>
+let pag
+  useEffect(()=>{setPage("page")},[])
 switch(page){
 case "login" :pag=<Login
 loginData={loginData}
