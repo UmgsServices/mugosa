@@ -1,0 +1,43 @@
+body {
+    min-height: 100vh;
+    place-items: center;
+    min-width: 320px;
+    background-color:white;
+    -webkit-font-smoothing:antialiased;
+    -webkit-osx-font-smoothing: grayscale;
+    
+  }
+  .Display{
+    border: .1em solid rgb(223, 219, 219);
+    background-color: rgb(252, 248, 248);
+    width:950px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height:auto;
+    max-width: 100%;
+    margin: 70px auto;
+    word-spacing: 2px;
+    padding: 20px;
+    font-size: large;
+   
+}
+p{
+    padding: 15px 50px 15px 50px;
+  }
+  h1{
+    
+    width: 100%;
+    text-align: center;
+  }
+  @media only screen and (max-width:950px){
+
+    .Display{
+        border: .1em solid rgb(223, 219, 219);
+        background-color: rgb(252, 248, 248);
+        width:500px;}
+        p{
+            padding: 10px;
+          }
+  }

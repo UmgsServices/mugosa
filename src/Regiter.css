@@ -1,0 +1,96 @@
+.Form{
+    width:600px;
+    height: 30px;
+    margin:10px 100px;
+    border-radius: 6px;
+    padding: 0px 5px;
+   
+  }
+  .name .Form{
+     width: 200px;
+     margin:10px 30px;
+  }
+  .button{
+   
+    display: flex;
+  }
+  button{
+    padding:3px 15px;
+    margin:3px auto;
+    background-color:inherit;
+    border-radius: 8px;
+  }
+  
+  form{
+    border: .1em solid rgb(223, 219, 219);
+    background-color: rgb(252, 248, 248);
+    padding: 25px 50px;
+   
+   width:950px;
+    align-items: center;
+    display: block;
+  display: grid;
+  flex-wrap: wrap;
+    overflow-x: hidden;
+  align-content: center;
+  margin: auto;
+  }
+  .select {
+    background-color: blue;
+    margin: 10px 50px;
+  }
+  .main{background-color: inherit;
+    overflow-x: hidden;
+    padding: 70px;
+    width: 100%;
+  }
+  
+  @media only screen and (max-width:950px){
+    form{
+        width: 500px;
+        display: grid;
+    }
+    .name,.address{
+        margin:2px auto;
+        background-color: inherit;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .name .Form{
+        width:300px;
+        height: 30px;
+        margin:10px auto;
+    }
+    .address .Form{
+        width: 400px;
+        margin:10px auto;
+    }
+    .Form{
+        width:300px;
+        height: 30px;
+        margin:10px auto;
+        overflow: hidden;
+       
+      }
+      button{
+        padding:3px 10px;
+        margin:3px auto;
+        background-color:inherit;
+        border-radius: 8px;
+      }
+    
+  }
+  @keyframes nit{
+  0%{
+    display: ruby;
+   transform: rotatey(0deg)
+  }
+  
+      50%{
+        transform: rotatey(90deg);
+      }
+      100%{
+        transform: rotatey(0deg);
+      }
+      
+  }

@@ -1,0 +1,41 @@
+ul{
+    border: none;
+   list-style: none;
+    text-align: left;
+}
+.attract{
+    width: 100%;
+    height: 250px;
+    animation: fonts forwards 1s infinite ;
+    background-color:blueviolet;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px auto;
+    
+}
+form{
+    background-color: inherit;
+    border: none;
+}
+input[type="text"],[type="email"],[type="text"],select{
+    margin-bottom: 30px;
+    height:25px;
+    font-size:15px;
+    color: rgb(42, 42, 43);
+}
+.note{
+    margin-right: 150px;
+}
+
+
+@keyframes fonts{
+    25%{
+        color: rgb(226, 228, 231);
+    }
+    50%{
+        color: rgb(194, 106, 33); 
+    }
+    70%{
+        color: rgb(9, 132, 241);  
+    }
+}
