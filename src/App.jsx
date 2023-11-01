@@ -7,6 +7,7 @@ import Home from './Home/Home.jsx'
 import ContactUs from './Home/contact.jsx';
 import Header from './header.jsx';
 import Component from './Home/component.jsx';
+import {Navigate, Route, Routes,useNavigate} from 'react-router-dom';
 const user={
   username:"",
   name:"",
@@ -21,7 +22,10 @@ const [loginData,setlogin]=useState(user)
 const [page,setPage]=useState("page")
 
 let pag
-  useEffect(()=>{setPage("page")},[])
+  useEffect(()=>{
+const navigate=useNavigate()
+   navigate ("/")
+  },[])
 switch(page){
 case "login" :pag=<Login
 loginData={loginData}
