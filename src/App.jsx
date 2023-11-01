@@ -20,7 +20,7 @@ function App(){
 const [loginData,setlogin]=useState(user)
 const [page,setPage]=useState("page")
 
-let pag
+let pag=<Page loginData={loginData} setPage={setPage}/>
 switch(page){
 case "login" :pag=<Login
 loginData={loginData}
