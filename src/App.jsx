@@ -1,4 +1,4 @@
-import { useState,useEffect } from 'react'; 
+ import { useState,useEffect } from 'react'; 
 import Login from './login.jsx'
 import SignUP from './sinup.jsx';
 import Feeds from './feeds.jsx';
@@ -38,6 +38,7 @@ case "feeds":pag=<Feeds
   loginData={loginData}
   setPage={setPage}
 />
+  default:pag=<Page loginData={loginData} setPage={setPage}/>
 }
   return pag
   
