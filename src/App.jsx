@@ -24,7 +24,7 @@ const [page,setPage]=useState("page")
 let pag
  const navigate=useNavigate()
   useEffect(()=>{
-   navigate("/")
+   navigate("/Home/Home")
   },[])
 switch(page){
 case "login" :pag=<Login
