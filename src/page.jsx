@@ -19,7 +19,7 @@ function Page({loginData,setPage}){
    />
   <div className="app">
     <Routes>
-      <Route path='/Home/Home'
+      <Route path='/'
       element={<Main
       
       />}
